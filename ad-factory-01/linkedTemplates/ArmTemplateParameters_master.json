@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ad-factory-01"
+		},
+		"APiData_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"input_linked_service_connectionString": {
+			"value": "DefaultEndpointsProtocol=https;AccountName=adarshazure;EndpointSuffix=core.windows.net;"
+		},
+		"output_linked_service_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adarshazure.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://adarshazure.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://demovault25.vault.azure.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "ad-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "ad-azure"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "ad-user"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://reqres.in/api/users"
+		},
+		"RestService2_properties_typeProperties_url": {
+			"value": "https://reqres.in/api/users"
+		},
+		"RestService3_properties_typeProperties_url": {
+			"value": "https://dummyjson.com"
+		},
+		"output_linked_service_properties_typeProperties_server": {
+			"value": "ad-server.database.windows.net"
+		},
+		"output_linked_service_properties_typeProperties_database": {
+			"value": "ad-azure"
+		},
+		"output_linked_service_properties_typeProperties_userName": {
+			"value": "ad-user"
+		},
+		"TumblingTrigger_properties_pipeline_parameters_StartTime": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"TumblingTrigger_properties_pipeline_parameters_EndTime": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/eb3c4c93-9bc8-4ca3-95b0-142d3f7b274e/resourceGroups/adarsh/providers/Microsoft.Storage/storageAccounts/adarshazure"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
