@@ -1,0 +1,95 @@
+{
+	"name": "functions",
+	"properties": {
+		"activities": [
+			{
+				"name": "concate",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "concate",
+					"value": {
+						"value": "@concat('adarsh',' ','bhayani')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "upper case",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Upper_case",
+					"value": {
+						"value": "@toUpper('simform')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "dynamic file name",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "dynamic_file_name",
+					"value": {
+						"value": "@concat('Report-',formatDateTime(utcNow(),'yyyymmdd-hhmmss'),'.csv' )",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "date diff",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "date_difference",
+					"value": {
+						"value": "@div(sub(ticks('2025-04-28'), ticks('2025-04-01')), 864000000000)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"concate": {
+				"type": "String"
+			},
+			"Upper_case": {
+				"type": "String"
+			},
+			"dynamic_file_name": {
+				"type": "String"
+			},
+			"date_diff": {
+				"type": "String"
+			},
+			"date_difference": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-09T08:48:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

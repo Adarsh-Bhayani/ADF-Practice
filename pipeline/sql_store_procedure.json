@@ -1,0 +1,35 @@
+{
+	"name": "sql_store_procedure",
+	"properties": {
+		"activities": [
+			{
+				"name": "store_procedure",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderQuery": "DECLARE @empTotal INT;\nEXECUTE spGetEmpCountByGender 'Male', @empTotal OUTPUT;\nSELECT @empTotal AS empTotal;",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "AzureSqlTable3",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-05-09T08:48:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

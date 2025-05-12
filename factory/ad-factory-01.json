@@ -1,0 +1,9 @@
+{
+	"name": "ad-factory-01",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "17ac5032-144b-4ea1-bf34-5d0113fcbd1b",
+		"tenantId": "f3db65e4-ce5a-4d7e-a140-255bf017d87f"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "output_linked_service",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "ad-server.database.windows.net",
+			"database": "ad-azure",
+			"encrypt": "optional",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "ad-user",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDM5MEE3MEY2LTM3OUUtNEIzMy1BQzQ4LTNCNEI2QUU1QjczOF9lNWI1MmVmNS1iMTcyLTRiNWYtYWY1OS1hYzE5YmM0NjUyMGEiDQp9"
+		}
+	}
+}
