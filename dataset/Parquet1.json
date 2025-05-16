@@ -1,0 +1,81 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_s3_bucket",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "dhruv-glue-etl-output",
+				"folderPath": "category=Accessories"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "productid",
+				"type": "UTF8"
+			},
+			{
+				"name": "userid",
+				"type": "INT64"
+			},
+			{
+				"name": "orderid",
+				"type": "INT64"
+			},
+			{
+				"name": "orderdate",
+				"type": "DATE"
+			},
+			{
+				"name": "quantity",
+				"type": "INT64"
+			},
+			{
+				"name": "status",
+				"type": "UTF8"
+			},
+			{
+				"name": "firstname",
+				"type": "UTF8"
+			},
+			{
+				"name": "lastname",
+				"type": "UTF8"
+			},
+			{
+				"name": "email",
+				"type": "UTF8"
+			},
+			{
+				"name": "signupdate",
+				"type": "DATE"
+			},
+			{
+				"name": "productname",
+				"type": "UTF8"
+			},
+			{
+				"name": "price",
+				"type": "INT64"
+			},
+			{
+				"name": "stockquantity",
+				"type": "INT64"
+			},
+			{
+				"name": "customerage",
+				"type": "INT32"
+			},
+			{
+				"name": "totalprice",
+				"type": "INT64"
+			}
+		]
+	}
+}
