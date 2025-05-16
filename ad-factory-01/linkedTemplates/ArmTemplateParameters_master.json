@@ -23,6 +23,9 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"FileServer1_password": {
+			"value": ""
+		},
 		"LS_s3_bucket_secretAccessKey": {
 			"value": ""
 		},
@@ -49,6 +52,12 @@
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "ad-user"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "C:\\Users\\adarsh.bhayani\\Desktop\\Adarsh\\local_data"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "adarsh.bhayani@simformsolutions.com"
 		},
 		"LS_s3_bucket_properties_typeProperties_accessKeyId": {
 			"value": "AKIA563UI5QITR4NGF4R"
