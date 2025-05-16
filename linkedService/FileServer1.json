@@ -6,8 +6,8 @@
 		"type": "FileServer",
 		"typeProperties": {
 			"host": "C:\\Users\\adarsh.bhayani\\Desktop\\Adarsh\\local_data",
-			"userId": "adarsh.bhayani",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5ODhkMDY2OC05M2M2LTRkOTctYTU0OC0zNDcyMDE2MWNlNWMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"userId": "adarsh.bhayani@simformsolutions.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkMmFiYjU0Zi03MTFmLTQyMTYtOTAyZS1mMzhmMmJmZjNhYTMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "IR-simform-pc",
