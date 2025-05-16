@@ -31,6 +31,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
 		},
+		"LS_s3_bucket_secretAccessKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'secretAccessKey' of 'LS_s3_bucket'"
+		},
 		"input_linked_service_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'input_linked_service'",
@@ -63,6 +67,10 @@
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "ad-user"
+		},
+		"LS_s3_bucket_properties_typeProperties_accessKeyId": {
+			"type": "string",
+			"defaultValue": "AKIA563UI5QITR4NGF4R"
 		},
 		"RestService1_properties_typeProperties_url": {
 			"type": "string",
@@ -145,6 +153,9 @@
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
+					"LS_s3_bucket_secretAccessKey": {
+						"value": "[parameters('LS_s3_bucket_secretAccessKey')]"
+					},
 					"output_linked_service_password": {
 						"value": "[parameters('output_linked_service_password')]"
 					},
@@ -165,6 +176,9 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"LS_s3_bucket_properties_typeProperties_accessKeyId": {
+						"value": "[parameters('LS_s3_bucket_properties_typeProperties_accessKeyId')]"
 					},
 					"RestService1_properties_typeProperties_url": {
 						"value": "[parameters('RestService1_properties_typeProperties_url')]"

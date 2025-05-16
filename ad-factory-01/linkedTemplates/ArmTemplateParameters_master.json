@@ -23,6 +23,9 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"LS_s3_bucket_secretAccessKey": {
+			"value": ""
+		},
 		"input_linked_service_connectionString": {
 			"value": "DefaultEndpointsProtocol=https;AccountName=adarshazure;EndpointSuffix=core.windows.net;"
 		},
@@ -46,6 +49,9 @@
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "ad-user"
+		},
+		"LS_s3_bucket_properties_typeProperties_accessKeyId": {
+			"value": "AKIA563UI5QITR4NGF4R"
 		},
 		"RestService1_properties_typeProperties_url": {
 			"value": "https://reqres.in/api/users"
